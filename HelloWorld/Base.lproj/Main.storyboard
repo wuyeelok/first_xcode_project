@@ -15,8 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-Wv-zXk">
-                                <rect key="frame" x="163" y="437.5" width="88.5" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-GH-T9R" userLabel="FirstButton">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8o-uo-ufd" userLabel="SecondButton">
+                                <rect key="frame" x="184" y="473" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J55-b1-DdB" userLabel="ThridButton">
+                                <rect key="frame" x="184" y="513" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSZ-sb-uax">
+                                <rect key="frame" x="105" y="402" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -24,8 +36,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="t1T-Wv-zXk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bQr-O9-1Me"/>
-                            <constraint firstItem="t1T-Wv-zXk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u50-fh-cQo"/>
+                            <constraint firstItem="PSZ-sb-uax" firstAttribute="bottom" secondItem="J4n-GH-T9R" secondAttribute="top" constant="-10" id="4fD-jn-xju"/>
+                            <constraint firstItem="X8o-uo-ufd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98G-gJ-Ovb"/>
+                            <constraint firstItem="J55-b1-DdB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ORO-d1-x5O"/>
+                            <constraint firstItem="PSZ-sb-uax" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fb6-eS-dEE"/>
+                            <constraint firstItem="J4n-GH-T9R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhy-9J-h5Q"/>
+                            <constraint firstItem="J55-b1-DdB" firstAttribute="top" secondItem="X8o-uo-ufd" secondAttribute="bottom" constant="10" id="lPX-r3-rEk"/>
+                            <constraint firstItem="X8o-uo-ufd" firstAttribute="top" secondItem="J4n-GH-T9R" secondAttribute="bottom" constant="10" id="nOp-54-JQe"/>
+                            <constraint firstItem="J4n-GH-T9R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vIo-BH-sva"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
